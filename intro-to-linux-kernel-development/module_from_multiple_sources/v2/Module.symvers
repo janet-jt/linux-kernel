@@ -1,0 +1,2 @@
+0x62b7a09b	print_greet_message	/home/janet/Desktop/new-job/linux-kernel/module_from_multiple_sources/v2/two/print_messages	EXPORT_SYMBOL	
+0x702ca92f	print_exit_message	/home/janet/Desktop/new-job/linux-kernel/module_from_multiple_sources/v2/two/print_messages	EXPORT_SYMBOL_GPL	

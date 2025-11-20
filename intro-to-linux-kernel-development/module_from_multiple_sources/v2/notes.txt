@@ -1,0 +1,17 @@
+if want to insert the module hello_world.ko, have to insert the module print_messages.ko first
+
+- insmod two/print_messages.ko
+- insmod one/hello_world.ko
+
+there are dependencies of the modules
+hello_world depends on print_messages module
+
+therefore, befoe remove print_messages module, have to remove hello_world module
+
+----------------
+install module into kernel update file (/lib/modules/$(uname -r)/updates)
+
+make install -> add one & two directories to updates dir
+depmod -a -> create the dependencies of hello_world to print_messages
+modprobe hello_world -> now, it will insert hello_world module and its depends modules into the kernel
+modinfo hello_world -> list the modules it depends on

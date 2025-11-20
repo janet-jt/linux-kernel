@@ -1,0 +1,13 @@
+build the kernel module - make -C /lib/modules/$(uname -r)/build M=$(pwd) modules
+insert the kernel module - insmod hello_world.ko
+check if the module loaded - dmesg & lsmod
+remove the module from kernel - rmmod hello_world
+check if the module removed - dmesg & lsmod
+clean the kernel generated files - make -C /lib/modules/$(uname -r)/build M=$(pwd) clean
+
+less /proc/kallsyms -> the address list of the kernel
+	-> hello_world fuction -> grep -F '[hello_world]' /proc/kallsyms
+
+make install -> will be install the module into the kernel module folder
+				-> verify: ls /lib/modules/$(uname -r)/updates
+				-> verify mesg: less /lib/modules/$(uname -r)/modules.dep

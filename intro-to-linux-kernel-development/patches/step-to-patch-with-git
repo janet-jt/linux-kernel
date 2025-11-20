@@ -1,0 +1,41 @@
+[Up-to-date] Reference: https://docs.kernel.org/process/submitting-patches.html
+
+git checkout -b proc_jiffies_patch
+git branch
+
+cp proc_jiffies.c fs/proc
+vim Kconfig
+vim Makefile
+
+git add .
+git commit
+	Expose jiffies variable via /proc/jiffies
+
+	This patch adds support for exposing jiffies variable via
+	/proc/jiffies - which can be useful sometimes in user-space
+	instrumentation and diagnostics.
+
+mkdir /root/patches master
+git format-patch -o /root/patches [anylocation]
+	generated: /root/patches/001-Expose-jiffies-variable-via-proc-jiffies.patch
+
+//Not suggest to set the parameter -> it is annoying & blacklist you!
+git send-email --to=xxx master [the maintainer of the subsystem of the kernel]
+	how to find them? scripts/get_maintainer.pl -f fs/proc/Kconfig
+	enter this command --> will generate the email
+
+git help send-email [list all the options in my patch email]
+
+git checkout -b test_patch
+git branch
+git status [verify the branch]
+
+git apply /root/patches/001-Expose-jiffies-variable-via-proc-jiffies.patch
+git status
+
+ls Document/process [if you want to do the patches]
+	- understanding & working with the community
+	- **coding-style.rst [Linus expected coding style]
+	- applying-patching.rst
+	- botching-up-ioctls.rst [do & dont]
+

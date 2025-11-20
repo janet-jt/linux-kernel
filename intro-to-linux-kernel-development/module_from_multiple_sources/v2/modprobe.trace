@@ -1,0 +1,251 @@
+execve("/usr/sbin/modprobe", ["modprobe", "hello_world"], 0x7ffe43f78d08 /* 24 vars */) = 0
+brk(NULL)                               = 0x5f29d8b0a000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe0f4a29d0) = -1 EINVAL (Invalid argument)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x78cdd05d6000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=62399, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 62399, PROT_READ, MAP_PRIVATE, 3, 0) = 0x78cdd05c6000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libzstd.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=841808, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 843832, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x78cdd04f7000
+mmap(0x78cdd0501000, 729088, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x78cdd0501000
+mmap(0x78cdd05b3000, 69632, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xbc000) = 0x78cdd05b3000
+mmap(0x78cdd05c4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xcc000) = 0x78cdd05c4000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=170456, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 172296, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x78cdd04cc000
+mmap(0x78cdd04cf000, 110592, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x78cdd04cf000
+mmap(0x78cdd04ea000, 45056, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x78cdd04ea000
+mmap(0x78cdd04f5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x78cdd04f5000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4455728, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 4469952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x78cdd0000000
+mmap(0x78cdd00b2000, 2486272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb2000) = 0x78cdd00b2000
+mmap(0x78cdd0311000, 860160, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x311000) = 0x78cdd0311000
+mmap(0x78cdd03e3000, 385024, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3e2000) = 0x78cdd03e3000
+mmap(0x78cdd0441000, 9408, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x78cdd0441000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\315A\vq\17\17\tLh2\355\331Y1\0m"..., 68, 896) = 68
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x78cdcfc00000
+mprotect(0x78cdcfc28000, 2023424, PROT_NONE) = 0
+mmap(0x78cdcfc28000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x78cdcfc28000
+mmap(0x78cdcfdbd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x78cdcfdbd000
+mmap(0x78cdcfe16000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x78cdcfe16000
+mmap(0x78cdcfe1c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x78cdcfe1c000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x78cdd04ca000
+arch_prctl(ARCH_SET_FS, 0x78cdd04cac40) = 0
+set_tid_address(0x78cdd04caf10)         = 12479
+set_robust_list(0x78cdd04caf20, 24)     = 0
+rseq(0x78cdd04cb5e0, 0x20, 0, 0x53053053) = 0
+mprotect(0x78cdcfe16000, 16384, PROT_READ) = 0
+mprotect(0x78cdd03e3000, 372736, PROT_READ) = 0
+mprotect(0x78cdd04f5000, 4096, PROT_READ) = 0
+mprotect(0x78cdd05c4000, 4096, PROT_READ) = 0
+mprotect(0x5f29a5fdd000, 8192, PROT_READ) = 0
+mprotect(0x78cdd0610000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x78cdd05c6000, 62399)           = 0
+getrandom("\x04\xb3\x55\x8d\x40\x20\x4f\x7a", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x5f29d8b0a000
+brk(0x5f29d8b2b000)                     = 0x5f29d8b2b000
+uname({sysname="Linux", nodename="janet-ubuntu-dev", ...}) = 0
+newfstatat(AT_FDCWD, "/etc/modprobe.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/modprobe.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(3, 0x5f29d8b0a450 /* 13 entries */, 32768) = 544
+newfstatat(3, "blacklist-modem.conf", {st_mode=S_IFREG|0644, st_size=156, ...}, 0) = 0
+newfstatat(3, "iwlwifi.conf", {st_mode=S_IFREG|0644, st_size=347, ...}, 0) = 0
+newfstatat(3, "blacklist-oss.conf", {st_mode=S_IFREG|0644, st_size=1059, ...}, 0) = 0
+newfstatat(3, "blacklist.conf", {st_mode=S_IFREG|0644, st_size=1518, ...}, 0) = 0
+newfstatat(3, "amd64-microcode-blacklist.conf", {st_mode=S_IFREG|0644, st_size=154, ...}, 0) = 0
+newfstatat(3, "intel-microcode-blacklist.conf", {st_mode=S_IFREG|0644, st_size=154, ...}, 0) = 0
+newfstatat(3, "alsa-base.conf", {st_mode=S_IFREG|0644, st_size=2507, ...}, 0) = 0
+newfstatat(3, "blacklist-firewire.conf", {st_mode=S_IFREG|0644, st_size=210, ...}, 0) = 0
+newfstatat(3, "blacklist-rare-network.conf", {st_mode=S_IFREG|0644, st_size=583, ...}, 0) = 0
+newfstatat(3, "blacklist-ath_pci.conf", {st_mode=S_IFREG|0644, st_size=325, ...}, 0) = 0
+newfstatat(3, "blacklist-framebuffer.conf", {st_mode=S_IFREG|0644, st_size=677, ...}, 0) = 0
+getdents64(3, 0x5f29d8b0a450 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/run/modprobe.d", 0x7ffe0f49f810, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/modprobe.d", 0x7ffe0f49f810, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/modprobe.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/lib/modprobe.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(3, 0x5f29d8b12840 /* 7 entries */, 32768) = 296
+newfstatat(3, "systemd.conf", {st_mode=S_IFREG|0644, st_size=773, ...}, 0) = 0
+newfstatat(3, "blacklist_linux-hwe-6.8_6.8.0-49-generic.conf", {st_mode=S_IFREG|0644, st_size=1622, ...}, 0) = 0
+newfstatat(3, "aliases.conf", {st_mode=S_IFREG|0644, st_size=655, ...}, 0) = 0
+newfstatat(3, "blacklist_linux-hwe-6.8_6.8.0-52-generic.conf", {st_mode=S_IFREG|0644, st_size=1622, ...}, 0) = 0
+newfstatat(3, "fbdev-blacklist.conf", {st_mode=S_IFREG|0644, st_size=390, ...}, 0) = 0
+getdents64(3, 0x5f29d8b12840 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/modprobe.d/aliases.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=655, ...}, AT_EMPTY_PATH) = 0
+read(3, "# These are the standard aliases"..., 4096) = 655
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/modprobe.d/alsa-base.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2507, ...}, AT_EMPTY_PATH) = 0
+read(3, "# autoloader aliases\ninstall sou"..., 4096) = 2507
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/modprobe.d/amd64-microcode-blacklist.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=154, ...}, AT_EMPTY_PATH) = 0
+read(3, "# The microcode module attempts "..., 4096) = 154
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/modprobe.d/blacklist-ath_pci.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=325, ...}, AT_EMPTY_PATH) = 0
+read(3, "# For some Atheros 5K RF MACs, t"..., 4096) = 325
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/modprobe.d/blacklist-firewire.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=210, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Select the legacy firewire sta"..., 4096) = 210
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/modprobe.d/blacklist-framebuffer.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=677, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Framebuffer drivers are genera"..., 4096) = 677
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/modprobe.d/blacklist-modem.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=156, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Uncomment these entries in ord"..., 4096) = 156
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/modprobe.d/blacklist-oss.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1059, ...}, AT_EMPTY_PATH) = 0
+read(3, "blacklist ac97\nblacklist ac97_co"..., 4096) = 1059
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/modprobe.d/blacklist-rare-network.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=583, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Many less commonly used networ"..., 4096) = 583
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/modprobe.d/blacklist.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1518, ...}, AT_EMPTY_PATH) = 0
+read(3, "# This file lists those modules "..., 4096) = 1518
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/modprobe.d/blacklist_linux-hwe-6.8_6.8.0-49-generic.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1622, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Kernel supplied blacklist for "..., 4096) = 1622
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/modprobe.d/blacklist_linux-hwe-6.8_6.8.0-52-generic.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1622, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Kernel supplied blacklist for "..., 4096) = 1622
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/modprobe.d/fbdev-blacklist.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=390, ...}, AT_EMPTY_PATH) = 0
+read(3, "# This file blacklists most old-"..., 4096) = 390
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/modprobe.d/intel-microcode-blacklist.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=154, ...}, AT_EMPTY_PATH) = 0
+read(3, "# The microcode module attempts "..., 4096) = 154
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/modprobe.d/iwlwifi.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=347, ...}, AT_EMPTY_PATH) = 0
+read(3, "# /etc/modprobe.d/iwlwifi.conf\n#"..., 4096) = 347
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/modules/6.8.0-52-generic/modules.softdep", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2755, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Soft dependencies extracted fr"..., 4096) = 2755
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/modprobe.d/systemd.conf", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=773, ...}, AT_EMPTY_PATH) = 0
+read(3, "#  SPDX-License-Identifier: LGPL"..., 4096) = 773
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/proc/cmdline", O_RDONLY|O_CLOEXEC) = 3
+read(3, "BOOT_IMAGE=/boot/vmlinuz-6.8.0-5"..., 4095) = 176
+read(3, "", 3919)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/modules/6.8.0-52-generic/modules.dep.bin", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1062778, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1062778, PROT_READ, MAP_PRIVATE, 3, 0) = 0x78cdcfefc000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/modules/6.8.0-52-generic/modules.alias.bin", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1622177, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1622177, PROT_READ, MAP_PRIVATE, 3, 0) = 0x78cdcfa73000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/modules/6.8.0-52-generic/modules.symbols.bin", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=890778, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 890778, PROT_READ, MAP_PRIVATE, 3, 0) = 0x78cdcf999000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/modules/6.8.0-52-generic/modules.builtin.alias.bin", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29103, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 29103, PROT_READ, MAP_PRIVATE, 3, 0) = 0x78cdd05ce000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/modules/6.8.0-52-generic/modules.builtin.bin", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=11907, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 11907, PROT_READ, MAP_PRIVATE, 3, 0) = 0x78cdd05cb000
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/lib/modules/6.8.0-52-generic/updates/two/print_messages.ko", {st_mode=S_IFREG|0644, st_size=171440, ...}, 0) = 0
+openat(AT_FDCWD, "/sys/module/hello_world/initstate", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/sys/module/hello_world", 0x7ffe0f49f770, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/sys/module/print_messages/initstate", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/sys/module/print_messages", 0x7ffe0f49f770, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/modules/6.8.0-52-generic/updates/two/print_messages.ko", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1", 6)               = 6
+lseek(3, 0, SEEK_SET)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=171440, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 171440, PROT_READ, MAP_PRIVATE, 3, 0) = 0x78cdd04a0000
+finit_module(3, "", 0)                  = 0
+openat(AT_FDCWD, "/sys/module/hello_world/initstate", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/sys/module/hello_world", 0x7ffe0f49f770, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/modules/6.8.0-52-generic/updates/one/hello_world.ko", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1", 6)               = 6
+lseek(4, 0, SEEK_SET)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=170952, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 170952, PROT_READ, MAP_PRIVATE, 4, 0) = 0x78cdd0476000
+finit_module(4, "", 0)                  = 0
+munmap(0x78cdd04a0000, 171440)          = 0
+close(3)                                = 0
+munmap(0x78cdd0476000, 170952)          = 0
+close(4)                                = 0
+munmap(0x78cdcfefc000, 1062778)         = 0
+munmap(0x78cdcfa73000, 1622177)         = 0
+munmap(0x78cdcf999000, 890778)          = 0
+munmap(0x78cdd05ce000, 29103)           = 0
+munmap(0x78cdd05cb000, 11907)           = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
